@@ -1,6 +1,14 @@
 import express from 'express';
+
 const router = express.Router();
 
+// Connecting to the database this may be SQLLite
+// const connection = mysql.createPool({
+//     host: "localhost",
+//     user: "root",
+//     password: "root",
+//     database: "book_facts"
+// });
 
 // GET all questions
 router.get("/", async (req, res) => {   
